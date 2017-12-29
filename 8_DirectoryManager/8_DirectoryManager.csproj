@@ -43,12 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\FileSystemTreeHelper.cs" />
+    <Compile Include="Interfaces\IDirectoryReader.cs" />
+    <Compile Include="Interfaces\IDirectoryWriter.cs" />
+    <Compile Include="Model\Directory.cs" />
+    <Compile Include="Model\File.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serializers\BaseDirectorySerializer.cs" />
+    <Compile Include="Serializers\BinaryDirectorySerializer.cs" />
+    <Compile Include="Serializers\XmlDirectorySerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
